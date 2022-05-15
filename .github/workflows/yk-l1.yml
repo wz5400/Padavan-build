@@ -39,8 +39,6 @@ jobs:
         sh dl_toolchain.sh
         #
     - name: Build Firmware
-      env:
-        TNAME: YK-L1
       run: |
         cd /opt/rt-n56u/trunk
         sudo ./clear_tree
