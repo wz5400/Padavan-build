@@ -32,7 +32,7 @@ jobs:
         pkg-config zlib1g-dev libgmp3-dev libmpc-dev libmpfr-dev libncurses5-dev libltdl-dev wget
     - name: Clone source code
       run: |
-        git clone --depth=1 https://github.com/chongshengB/rt-n56u.git /opt/rt-n56u
+        git clone --depth=1 https://github.com/wz5400/Padavan-all.git /opt/rt-n56u
         mkdir -p /opt/images/ 
         #    
         cd /opt/rt-n56u/toolchain-mipsel
