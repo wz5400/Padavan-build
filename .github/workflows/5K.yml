@@ -16,7 +16,7 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-18.04
+    runs-on: ubuntu-20.04
     if: github.event.repository.owner.id == github.event.sender.id
 
     steps:
@@ -63,7 +63,7 @@ jobs:
         sudo ./clear_tree
         sudo ./build_firmware_modify 5K-W20
         sudo mv -f images/*.trx /opt/images/
-    - name : Upload packages
+    - name : 上传固件GitHub
       uses: actions/upload-artifact@master
       if: always()
       with:
