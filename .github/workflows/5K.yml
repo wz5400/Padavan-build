@@ -1,5 +1,5 @@
 #修改TNAME: K2P-5.0 中的K2P-5.0为你需要编译的型号，注意名称要与configs/templates/目录下的名字相同
-name: Build-5K
+name: Build-1208
 on: 
   release:
     types: [published]
@@ -60,7 +60,7 @@ jobs:
       run: |
         cd /opt/rt-n56u/trunk
         sudo ./clear_tree
-        sudo ./build_firmware_modify 5K-W20
+        sudo ./build_firmware_modify PSG1208
         sudo mv -f images/*.trx /opt/images/
     - name : 上传固件GitHub
       uses: actions/upload-artifact@master
