@@ -41,7 +41,7 @@ jobs:
         pkg-config zlib1g-dev libgmp3-dev libmpc-dev libmpfr-dev libncurses5-dev libltdl-dev wget
     - name: Clone source code
       run: |
-        git clone --depth=1 https://github.com/wz5400/YKLLL.git /opt/rt-n56u
+        git clone --depth=1 https://github.com/keke1023/Padavan.git /opt/rt-n56u
         sed -i 's/{ "wl_auth_mode", "psk" },/{ "wl_auth_mode", "open" },/g' /opt/rt-n56u/trunk/user/shared/defaults.c
         sed -i 's/{ "rt_auth_mode", "psk" },/{ "rt_auth_mode", "open" },/g' /opt/rt-n56u/trunk/user/shared/defaults.c
         sed -i 's/my.router/p.to/g' /opt/rt-n56u/trunk/user/rc/net_wan.c
