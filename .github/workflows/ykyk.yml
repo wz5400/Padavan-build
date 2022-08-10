@@ -1,5 +1,5 @@
 #修改TNAME: K2P-5.0 中的K2P-5.0为你需要编译的型号，注意名称要与configs/templates/目录下的名字相同
-name: Build-YKLLL
+name: Build-youku
 on: 
   release:
     types: [published]
@@ -49,9 +49,6 @@ jobs:
         #
         cd /opt/Btools/Setconfig/
         sh install_Setconfig.sh
-        #
-         cd /opt/Btools/Patch/
-         sh install_Patch.sh
         #
         cd /opt/rt-n56u/toolchain-mipsel
         sh dl_toolchain.sh
